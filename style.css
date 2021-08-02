@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: "Crimson", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url("img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.title {
+  font-size: 9rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  font-family: "WindSong";
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.searchbar {
+  margin: 5rem 0 7rem 0;
+}
+
+.formsearch input[type="text"] {
+  width: 45rem;
+  padding: 10px;
+  font-size: 17px;
+  border: 1.5px solid rgb(255, 255, 255);
+  float: left;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  /* border-top-left-radius: 5px; */
+  /* border-bottom-left-radius: 5px; */
+  border-radius: 2rem;
+}
+
+.listing {
+  display: flex;
+  flex-direction: row;
+
+  flex-wrap: wrap;
+}
+
+.displaybox {
+  display: flex;
+  margin: 2rem;
+  width: 45vw;
+  height: 38rem;
+  background-color: rgba(199, 199, 199, 0.714);
+  border-bottom-right-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.img {
+  /* width: 25rem;
+  height: 25rem;
+  overflow: hidden; */
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  height: 38rem;
+  width: 25rem;
+}
+.image {
+  width: 27rem;
+}
+.name {
+  font-size: 3rem;
+  padding: 2rem;
+  margin-left: 1rem;
+  /* align-content: center; */
+  /* align-self: center; */
+  text-align: center;
+  font-weight: 700;
+}
+hr {
+  width: 36.5rem;
+}
+P {
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
